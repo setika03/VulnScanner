@@ -1,0 +1,25 @@
+# Core dependencies
+requests>=2.31.0
+urllib3>=2.0.0
+
+# Web framework
+Flask>=3.0.0
+
+# Security scanning tools
+safety>=2.3.0
+bandit>=1.7.5
+
+# Network scanning
+python-nmap>=0.7.1
+
+# SSL/TLS analysis
+pyopenssl>=23.0.0
+cryptography>=41.0.0
+
+# Web security
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# Utilities
+colorama>=0.4.6
+tqdm>=4.65.0

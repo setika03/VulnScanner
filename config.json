@@ -1,0 +1,52 @@
+{
+  "scanner_settings": {
+    "timeout": 10,
+    "max_threads": 50,
+    "user_agent": "VulnerabilityScanner/1.0"
+  },
+  "port_scan": {
+    "default_ports": [
+      21, 22, 23, 25, 53, 80, 110, 143, 443, 445, 
+      3306, 3389, 5432, 8080, 8443, 8888
+    ],
+    "scan_all_ports": false,
+    "port_range": null
+  },
+  "security_headers": {
+    "required_headers": [
+      "X-Frame-Options",
+      "X-Content-Type-Options",
+      "X-XSS-Protection",
+      "Strict-Transport-Security",
+      "Content-Security-Policy",
+      "Referrer-Policy",
+      "Permissions-Policy"
+    ],
+    "check_http": true,
+    "check_https": true
+  },
+  "ssl_tls": {
+    "check_protocols": true,
+    "weak_protocols": ["SSLv2", "SSLv3", "TLSv1", "TLSv1.1"],
+    "check_certificate": true,
+    "cert_expiry_warning_days": 30
+  },
+  "http_methods": {
+    "check_dangerous_methods": true,
+    "dangerous_methods": ["PUT", "DELETE", "TRACE", "DEBUG", "OPTIONS"]
+  },
+  "reporting": {
+    "output_format": "json",
+    "include_info": true,
+    "include_warnings": true,
+    "save_report": true,
+    "report_directory": "./reports"
+  },
+  "severity_levels": {
+    "critical": 9,
+    "high": 7,
+    "medium": 5,
+    "low": 3,
+    "info": 1
+  }
+}
